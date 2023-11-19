@@ -11,6 +11,22 @@ namespace Git_Repositories
         static void Main(string[] args)
         {
         }
+        static void Degree()
+        {
+            Console.OutputEncoding = Encoding.GetEncoding(1251);
+            Console.InputEncoding = Encoding.GetEncoding(1251);
 
+            Console.WriteLine("Виберіть число:");
+            int number = int.Parse(Console.ReadLine());
+            Console.WriteLine("Виберіть степень:");
+            int degree = int.Parse(Console.ReadLine());
+
+            int result = 1;
+
+            for (int i = 0; i < degree; i++)
+                result *= number;
+
+            Console.WriteLine($"Відповідь: {result}");
+        }
     }
 }
