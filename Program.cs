@@ -11,8 +11,6 @@ namespace Git_Repositories
         static void Main(string[] args)
         {
         }
-        public static string Name = "Daniele";
-        public static string SecondName = "Fiorentino";
         static void Degree()
         {
             Console.OutputEncoding = Encoding.GetEncoding(1251);
